@@ -8,8 +8,8 @@ public class MyPasswordEncoder {
     public static void main(String[] args) {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         System.out.println(encoder.encode("srijan123"));
-        //{bcrypt}$2a$10$xKCCBBC1AYQnedqningrguXLJhfy7xwKBnMtSkNMsHkobkvLfhZ26  -->pin
-        //{bcrypt}$2a$10$UKrekBtpsF8BhiZ3EulQFOx3gMmlb23xHsRc/ICcUxVqW1bip9.1q  -->venkat123
-        //{bcrypt}$2a$10$sV9/f.Hni8ovl1nNpHh8C.CWnjZI9czQ4O53bZzBG25Sq1w1GvRGy  -->srijan123
+        //{bcrypt}$2a$10$tNkmiuaSVEnN/2IUSFB47O5HL2/6aTNBnu2SJm63lzDz0O9/LNqX.  -->pin
+        //{bcrypt}$2a$10$cLALSQzgjiA5O1EWGknq9ezHUmzjLE4qog1A8rkWG8n9MzlXDMz3.  -->venkat123
+        //{bcrypt}$2b$10$gVsm9dxvKbFkTSbZk3Mz6ecsLiJqGZVKv07RzwAv9RtJ5HsWrd9oS  -->srijan123
     }
 }

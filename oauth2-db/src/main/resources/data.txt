@@ -34,10 +34,10 @@ VALUES ('mobile', '{bcrypt}$2a$10$xKCCBBC1AYQnedqningrguXLJhfy7xwKBnMtSkNMsHkobk
      (2,2),  /* read operator */
      (3,2);  /* update operator */
 
-insert into user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
+insert into user (id, username,password, email, enabled, account_non_expired, credentials_non_expired, account_non_locked)
 VALUES ('1', 'venkat','{bcrypt}$2a$10$UKrekBtpsF8BhiZ3EulQFOx3gMmlb23xHsRc/ICcUxVqW1bip9.1q', 'venkat@gmail.com', '1', '1', '1', '1');
 
-insert into  user (id, username,password, email, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked)
+insert into  user (id, username,password, email, enabled, account_non_expired, credentials_non_expired, account_non_locked)
 VALUES ('2', 'srijan', '{bcrypt}$2a$10$sV9/f.Hni8ovl1nNpHh8C.CWnjZI9czQ4O53bZzBG25Sq1w1GvRGy','srijan@gmail.com', '1', '1', '1', '1');
 
 
