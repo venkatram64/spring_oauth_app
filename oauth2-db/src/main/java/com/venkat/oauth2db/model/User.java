@@ -17,10 +17,10 @@ public class User implements Serializable {
         this.username = user.getUsername();
         this.password = user.getPassword();
         this.email = user.getEmail();
-        this.enabled = user.isEnabled();
-        this.accountNonExpired = user.isAccountNonExpired();
-        this.credentialsNonExpired = user.isCredentialsNonExpired();
-        this.accountNonLocked = user.isAccountNonLocked();
+        this.enabled = user.enabled();
+        this.accountNonExpired = user.accountNonExpired();
+        this.credentialsNonExpired = user.credentialsNonExpired();
+        this.accountNonLocked = user.accountNonLocked();
         this.roles = user.getRoles();
     }
 
@@ -88,7 +88,7 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public boolean isEnabled() {
+    public boolean enabled() {
         return enabled;
     }
 
@@ -96,7 +96,7 @@ public class User implements Serializable {
         this.enabled = enabled;
     }
 
-    public boolean isAccountNonExpired() {
+    public boolean accountNonExpired() {
         return accountNonExpired;
     }
 
@@ -104,7 +104,7 @@ public class User implements Serializable {
         this.accountNonExpired = accountNonExpired;
     }
 
-    public boolean isCredentialsNonExpired() {
+    public boolean credentialsNonExpired() {
         return credentialsNonExpired;
     }
 
@@ -112,7 +112,7 @@ public class User implements Serializable {
         this.credentialsNonExpired = credentialsNonExpired;
     }
 
-    public boolean isAccountNonLocked() {
+    public boolean accountNonLocked() {
         return accountNonLocked;
     }
 
