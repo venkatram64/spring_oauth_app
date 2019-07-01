@@ -14,16 +14,16 @@ create table if not exists  oauth_client_details (
   additional_information varchar(4096) default null,
   autoapprove varchar(255) default null,
   primary key (client_id)
-) ;
+) engine=innodb;
 
 
 
 create table if not exists  permission (
   id int(11) not null auto_increment,
-  name varchar(512) default null,
+  name varchar(255) default null,
   primary key (id),
   unique key name (name)
-) ;
+) engine=innodb;
 
 
 
@@ -32,7 +32,7 @@ create table if not exists role (
   name varchar(255) default null,
   primary key (id),
   unique key name (name)
-);
+) engine=innodb;
 
 
 
@@ -47,7 +47,7 @@ create table if not exists  user (
   accountNonLocked tinyint(4) not null,
   primary key (id),
   unique key username (username)
-)
+) engine=innodb;
 
 
 create table  if not exists permission_role (
@@ -57,7 +57,7 @@ create table  if not exists permission_role (
   key role_id (role_id),
   constraint permission_role_ibfk_1 foreign key (permission_id) references permission (id),
   constraint permission_role_ibfk_2 foreign key (role_id) references role (id)
-)
+) engine=innodb;
 
 
 
@@ -68,6 +68,6 @@ create table if not exists role_user (
   key user_id (user_id),
   constraint role_user_ibfk_1 foreign key (role_id) references role (id),
   constraint role_user_ibfk_2 foreign key (user_id) references user (id)
-);
+)engine=innodb;
 
 
