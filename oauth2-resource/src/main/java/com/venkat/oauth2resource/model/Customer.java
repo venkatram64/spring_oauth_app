@@ -3,7 +3,7 @@ package com.venkat.oauth2resource.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "customer")
 public class Customer {
 
     @Id
